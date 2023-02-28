@@ -1,0 +1,11 @@
+@startuml interaction_overview
+
+actor User
+User -> System: Send ingredient list
+
+database Web
+System -> Web: Crawl recipes based on ingredient list
+System <-- Web: Return recipe links using searched ingredients
+User <-- System: Return recipe links using searched ingredients
+
+@enduml
