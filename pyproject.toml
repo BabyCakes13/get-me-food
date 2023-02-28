@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "get-me-food"
+version = "0.1.0"
+description = ""
+authors = ["Maria-Minerva Vonica <maria.minerva.vonica@gmail.com>"]
+readme = "README.md"
+packages = [{include = "get_me_food"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+pylint = "^2.16.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
