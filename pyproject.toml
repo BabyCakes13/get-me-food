@@ -9,7 +9,7 @@ packages = [{include = "get_me_food"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 
-[tool.poetry.group.dev.dependencies]
+[tool.poetry.dev-dependencies]
 flake8 = "^6.0.0"
 pylint = "^2.16.2"
 
