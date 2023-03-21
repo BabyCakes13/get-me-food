@@ -18,6 +18,7 @@ def main(argv: list) -> None:
     get_me_food = GetMeFood(cmd_arguments.ingredients())
     print(get_me_food)
 
+
 if __name__ == "__main__":
     main(sys.argv[1:])
     info_logger.info("Finished.")
