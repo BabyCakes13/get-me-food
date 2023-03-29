@@ -15,7 +15,7 @@ def main(argv: list) -> None:
     common_logger.setup_logger()
 
     cmd_arguments = CMDArguments(argv)
-    get_me_food = GetMeFood(cmd_arguments.ingredients())
+    get_me_food = GetMeFood(cmd_arguments.ingredients(), cmd_arguments.providers())
     print(get_me_food)
 
 
