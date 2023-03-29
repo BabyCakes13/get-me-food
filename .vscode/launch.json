@@ -5,13 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
             "name": "get_me_food",
             "type": "python",
             "request": "launch",
             "module": "get_me_food",
             "justMyCode": true,
             "args": [
-                "--ingredients", "tomato", "olive", "fish"
+                "--ingredients",
+                "tomato",
+                "olive",
+                "fish",
+                "--providers",
+                "https://foodwishes.blogspot.com/",
+                "https://prohomecooks.com/blogs/recipes"
             ]
         }
     ]
